@@ -15,13 +15,9 @@ public class anotherPageServlet extends HttpServlet{
 	
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
     throws ServletException, IOException{
-    	System.out.println(req.getSession().getAttribute("username"));
     	
-	   	if (req.getSession().getAttribute("username")==null) {
-	   		System.out.println("test2");
+	   
 	   		resp.sendRedirect("/login?next="+ req.getRequestURI());
-	   		return;
-	   	}
-        req.getRequestDispatcher("/WEB-INF/anotherPage.html").forward(req,resp);
+	   	
     }
 }

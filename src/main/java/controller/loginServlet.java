@@ -1,5 +1,7 @@
 package controller;
 
+import model.mest.entity.UserManager;
+import model.mest.entity.User;
 import java.io.*;
 import java.io.IOException;
 import javax.servlet.*;
@@ -11,36 +13,58 @@ import java.io.PrintWriter;
 import javax.servlet.http.HttpSession;
 
 
-public class loginServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
-		//@Override
 		protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 					throws ServletException, IOException {
-				req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req,resp);
+			req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req,resp);
 		}
 
 
-		//@Override
+
 		protected void doPost(HttpServletRequest req, HttpServletResponse resp)
-					throws ServletException, IOException {
-				String name = req.getParameter("name");
-				String password = req.getParameter("password");
+					throws ServletException, IOException { 
+			//Getting the details of the user for authentication and loggin in
+			String username = req.getParameter("username");
+			String password = req.getParameter("password");
+	
+			//Getting the username and password from the Json file saved on the server
+			String varifyusername = UserManager.getUser(username).getUsername();
+			System.out.println(varifyusername);
+			String varifypassword = UserManager.getUser(username).getPassword();
+			System.out.println(req.getParameter("next"));
+		
+			if ( username.equals(varifyusername) && username != "") {
+					
+				if ( password.equals(varifypassword) && password != "") {
 
-				if (req.getParameter("name") == null 
-					|| req.getParameter("password") == null) {
-						resp.sendRedirect("/login");
-						return;
+					HttpSession session = req.getSession();
+					session.setAttribute("Password", password);
+					session.setAttribute("Username", username);
+
+					System.out.println(req.getParameter("next"));
+
+					
+
+					if (req.getParameter("next") == null) {
+							System.out.println("int the next section");
+							resp.sendRedirect("/dashboard");
+						 	
+					}else{	
+							resp.sendRedirect(req.getParameter("next"));
+							System.out.println("the next didn't work");
+					}  
+				}else{
+					String wrongpassword = "Password entered does not match the username entered";
+					req.setAttribute("Wrongpassword",wrongpassword);
+					req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req,resp);
+					return;	
 				}
-				
-				// Creating a session
-				HttpSession session = req.getSession();        
-				session.setAttribute("username", name);
-				session.setAttribute("password", password);
-
-				if (req.getParameter("next") == null) {
-					resp.sendRedirect("/dashboard");
-				}
-
-				resp.sendRedirect(req.getParameter("next"));
+			}else{
+				String wronguser = "Username entered is not registered with Mestly";
+				req.setAttribute("Wronguser",wronguser);
+				req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req,resp);
+				return;
+			} 			
 		}
 }

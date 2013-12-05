@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Benke",
+    "lastName": "Benke",
+    "username": "Falk",
+    "oneLiner": "",
+    "email": "benke009@gmail.com",
+    "password": "benke123",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 6,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "Falk",
+    "lastName": "Benke",
+    "username": "fbenke",
+    "oneLiner": "",
+    "email": "falk@meltater.org",
+    "password": "password0",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 78,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  }
+]
