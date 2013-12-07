@@ -34,5 +34,23 @@
       "title": "firstTheme",
       "url": "http://www.ark.com/beta?"
     }
+  },
+  {
+    "firstName": "Nana",
+    "lastName": "Prempeh",
+    "username": "nanap",
+    "oneLiner": "",
+    "email": "nanaprempeh009@gmail.com",
+    "password": "flying123",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 30,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
   }
 ]

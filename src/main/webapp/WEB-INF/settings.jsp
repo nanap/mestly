@@ -39,6 +39,9 @@
       <!-- Jumbotron -->
       <div class="jumbotron">
         <center>
+          <c:if test="${param.next != null}">
+            <input type="hidden" name="next" value="${param.next}">
+          </c:if>
           <strong>Change your Password here.</strong><p><p>
           <c:if test="${yes!=null}">
             ${yes}<p>

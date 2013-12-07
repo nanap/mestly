@@ -1,10 +1,23 @@
+/**{
+  border: 2px solid black;
+}*/
+
+.aboutus {
+  text-align:left;
+  line-height:100%;
+  word-wrap:break-word;
+  text-overflow:clip;
+  position:relative;
+  top: 20px;
+  left: -10px;
+}
 
 body {
-  padding-top: 20px;
-  background-image: url('../../docs-assets/background.png');
-  margin-bottom: 0px;
-  border-bottom: 0px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  background-image: url('../../docs-assets/background.jpeg');
+  /*margin-bottom: 0px;
+  border-bottom: 0px;*/
+  /*padding-bottom: 50px;*/
 }
 
 .footer {
@@ -15,8 +28,8 @@ body {
   /*border-top: 1px solid #eee;*/
   text-align: center;
   display:inline;
-  color:black;
-  font-size:12px; 
+  color:white;
+  font-size:16px; 
   font-style: Georgia ;
 
 }
@@ -27,7 +40,7 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  margin-top: 180px;
+  margin-top: 120px;
   text-align: center;
   background-color: transparent;
 }
@@ -106,10 +119,13 @@ body {
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .logo {
+    width:400px;
+    height: 100px;
+    z-index: 1;
     float: left;
-    margin-top: -50px;
-    padding-left: 0;
-    padding-right: 0;
+    position:absolute;
+    left:25px;
+    top: 10px;   
   }
 
   /* Responsive: Portrait tablets and up */
@@ -160,5 +176,6 @@ body {
     float: left;
     padding-left: 0;
     padding-right: 0;
+    color: white;
   }
 }

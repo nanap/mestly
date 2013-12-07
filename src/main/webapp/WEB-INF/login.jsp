@@ -22,7 +22,7 @@
     <div class="container">
       <div >
         <div class="logo">
-          <a href="/"><img src="../docs-assets/logo2.png"></a>
+          <a href="/"><img src="../docs-assets/logo4.png"></a>
         </div>
 
         <center>
@@ -44,45 +44,55 @@
 
         <!-- Jumbotron -->
         <div class="jumbotron">       
-
+          
             <form class="form-horizontal" role="form"  method="post" action="/login">
-              
-                <strong>                Login</strong><p>
+                <div class="col-md-6 col-md-offset-1">
+                    <!-- <div class="form-group">
+                      <label class="col-sm-2  control-label"></label>
+                      <div class="col-sm-10 col-md-6 col-md-offset-2">
+                        <strong>Login</strong>
+                      </div>
+                    </div> -->
 
-                  <c:if test="${Wronguser != null}">
-                    ${Wronguser}<p>
-                  </c:if>
-
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label"></label>
-                    <div class="col-sm-10">
-                      <input type="Text" name="username" class="form-control" placeholder="Enter Username">
-                    </div>
-                  </div>
-                  
-                  <c:if test="${Wrongpassword != null}">
-                    ${Wrongpassword}<p>
-                  </c:if>
-
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label"></label>
-                    <div class="col-sm-10">
-                      <input type="Password" name="password" class="form-control"  placeholder="Enter Password">
-                    </div>
-
-                    <c:if test="${param.next != null}">
-                      <input type="hidden" name="next" value="${param.next}">
+                    <c:if test="${Wronguser != null}">
+                      ${Wronguser}<p>
                     </c:if>
                     
-                  </div>
-              
-                  <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" class="btn btn-lg btn-success btn-block " href="/login">Login</button>
+                    <div class="form-group">
+                      <label class="col-sm-2  control-label"></label>
+                      <div class="col-sm-10 col-md-6 col-md-offset-2">
+                        <input type="Text" name="username" class="form-control" placeholder="Enter Username">
+                      </div>
+                    </div>
+                    
+                    <c:if test="${Wrongpassword != null}">
+                      ${Wrongpassword}<p>
+                    </c:if>
+
+                    <div class="form-group">
+                      <label class="col-sm-2  control-label"></label>
+                      <div class="col-sm-10 col-md-6 col-md-offset-2">
+                        <input type="Password" name="password" class="form-control"  placeholder="Enter Password">
+                      </div>
+
+                      <c:if test="${param.next != null}">
+                        <input type="hidden" name="next" value="${param.next}">
+                      </c:if>
+                      
+                    </div>
+                
+                    <div class="form-group">
+                    
+                      <div class="col-sm-offset-2 col-sm-10 col-md-6 col-md-offset-4">
+                        <button type="submit" class="btn btn-sm btn-success btn-block " href="/login">Login</button>
+                      </div>
                     </div>
                   </div>
-              
             </form>
+            <div class="aboutus col-md-4 ">
+              Mestly is a social networking application for developers.It helps them create a beautiful online presence and find people with similar interests. It is a prettier version of Linkedin and a competitor to Zerply.</p>
+            </div>
+             
         </div>
         <!-- End of Jumbotron -->
 

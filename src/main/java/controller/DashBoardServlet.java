@@ -18,7 +18,13 @@ public class DashBoardServlet extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 	   throws ServletException, IOException{
 
-	   	//we place the entire method in a brackets and wrote String at the front
+	   	if (req.getSession().getAttribute("Username")==null ) {
+	   			resp.sendRedirect("/login?next" + req.getRequestURI());
+	   	}
+
+	   
+
+	   	//we place the entire method in brackets and wrote String at the front
 	   	// so that the object returned from the session can be typecasted into a string
 	   	// another way we could do that is to add .toString() at the end of the line before
 	   	// the ;

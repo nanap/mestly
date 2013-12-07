@@ -22,8 +22,8 @@
   <body>
     <div class="container">
       <div >
-        <div class="logo">
-          <a href="/"><img src="../../docs-assets/logo2.png"></a>
+        <div class="logo" >
+          <a href="/"><img border="0" src="../../docs-assets/logo3.png" alt="Logo" width="400" height="220" ></img></a>
         </div>
           <center>
             <div class="masthead">
@@ -42,15 +42,15 @@
           </center>
       </div>
       <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1><strong>Welcome to Mestly</strong></h1>
+      <div class="jumbotron col-md-12">
+        <center><h1><strong>Welcome to Mestly</strong></h1></center>
         <p><a class="btn btn-lg btn-success" href="/signup" role="button">Signup Now</a></p>
       </div>
       <div class="members">
         <div class="list">
           <strong>Trending Members:</strong>
           <c:forEach var="User" items="${List}">
-            <c:out value="/  ${User.firstName}" />
+            <strong><c:out value="/  ${User.firstName}" /></strong>
           </c:forEach>
         </div>
       </div>
