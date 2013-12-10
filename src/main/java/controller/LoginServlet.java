@@ -15,10 +15,13 @@ import javax.servlet.http.HttpSession;
 
 public class LoginServlet extends HttpServlet 
 {
+	String name= "";
+
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 	throws ServletException, IOException
 	{
+		name = (req.getParameter("name"));
 		req.getRequestDispatcher("/WEB-INF/login.jsp").forward(req,resp);
 	}
 
@@ -33,29 +36,28 @@ public class LoginServlet extends HttpServlet
 
 			//Getting the username and password from the Json file saved on the server
 		String varifyusername = UserManager.getUser(username).getUsername();
-		System.out.println(varifyusername);
+		System.out.println(varifyusername + "test1");
 		String varifypassword = UserManager.getUser(username).getPassword();
-		System.out.println(req.getParameter("next"));
-		
+ 	
 		if ( username.equals(varifyusername) && username != "") {
 
 			if ( password.equals(varifypassword) && password != "") {
 
 				HttpSession session = req.getSession();
-				session.setAttribute("Password", password);
 				session.setAttribute("Username", username);
 
-				System.out.println(req.getParameter("next"));
-
-
+					
+				if (name != null){
+					System.out.println(name);
+					resp.sendRedirect("/profile?name=" + name);
+					return;
+				}
 
 				if (req.getParameter("next") == null) {
-					System.out.println("int the next section");
 					resp.sendRedirect("/dashboard");
 
 				}else{	
 					resp.sendRedirect(req.getParameter("next"));
-					System.out.println("the next didn't work");
 				}  
 			}else{
 				String wrongpassword = "Password entered does not match the username entered";

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,14 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-    <title>Settings</title>
+    <title>Profile</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../css/justified-nav.css" rel="stylesheet">
-
   </head>
-
   <body>
     <div class="container">
       <div >
@@ -37,54 +35,28 @@
               </c:if>
 
               <c:if test="${sessionScope.Username==null}">
-                <a href = "/login"><button type="Submit" class="btn btn-primary btn-lg">Login</button></a>
+                <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
+                <a href = "/login?name=${user.username}"><button type="Submit" class="btn btn-primary">Login</button></a>
                 <a href="/signup"><button type="Submit" class="btn btn-success">Signup</button></a>
               </c:if>
             </div>
           </center>
       </div>
       <!-- Jumbotron -->
-      <div class="jumbotron">
-        <center>
-          <c:if test="${param.next != null}">
-            <input type="hidden" name="next" value="${param.next}">
-          </c:if>
-          <strong>Change your Password here.</strong><p><p>
-          <c:if test="${yes!=null}">
-            ${yes}<p>
-          </c:if>
-          <c:if test="${no!=null}">
-            ${no}<p>
-          </c:if>   
-          <form class="form-horizontal" role="form"  method="post" action="/settings">
-            <div class="form-group">
-              <label class="col-sm-2 control-label"></label>
-              <div class="col-sm-10">
-                <input type="Password" name="newpassword" class="form-control" placeholder="New Password">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label"></label>
-              <div class="col-sm-10">
-                <input type="Password" name="newpasswordconfirm" class="form-control"  placeholder="Confirm Password">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
-              </div>
-            </div>
-          </form>
-          <form class="form-horizontal" role="form"  method="post" action="/settings?delete=true">
-            <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-danger btn-block">Delete Account</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </center>   
+      <div class="jumbotronProfile" >
+        <font color="blue">
+          Welcome!<p>
+          Your email address is ${user.email}<p>
+          Your user-name is ${user.username} <p>
+          Your first-name is ${user.firstName}<P>
+          Your last-name is ${user.lastName}<P>
+          Your one-liner is ${user.oneLiner}<P><P><P><P>
+          Following List:<p>
+          Follower List:<p>
+          Follow <p>         
+        </font color>
       </div>
+
       <!-- Site footer -->
       <div class="footer">
         <p>&copy; Company 2013</p>

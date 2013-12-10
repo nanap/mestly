@@ -30,13 +30,13 @@
               <c:if test="${sessionScope.Username!=null}">
                 <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
                 <a href="/dashboard"><button type="Submit" class="btn btn-primary">Dashboard</button></a>
+                <a href="/profile"><button type="Submit" class="btn btn-primary">Profile</button></a>
                 <a href="/settings"><button type="Submit" class="btn btn-primary">Settings</button></a>
                 <a href="/logout"><button type="Submit" class="btn btn-primary">Logout</button></a>
               </c:if>
 
               <c:if test="${sessionScope.Username==null}">
                 <a href = "/login"><button type="Submit" class="btn btn-primary btn-lg">Login</button></a>
-                <!-- <a href="/signup"><button type="Submit" class="btn btn-success">Signup</button></a> -->
               </c:if>
             </div>
           </center>
@@ -50,7 +50,11 @@
         <div class="list">
           <strong>Trending Members:</strong>
           <c:forEach var="User" items="${List}">
-            <strong><c:out value="/  ${User.firstName}" /></strong>
+            <a href="/profile?name=${User.username}">
+              <strong>
+                <c:out value="/  ${User.firstName}" />
+              </strong>
+            </a>
           </c:forEach>
         </div>
       </div>

@@ -25,15 +25,11 @@ public class SettingsServlet extends HttpServlet{
 			return;
 		}
     		req.getRequestDispatcher("/WEB-INF/settings.jsp").forward(req,resp);
-
-
-    	
 	} 
 
 
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 	throws ServletException, IOException{
-		
 
 			String password = req.getParameter("newpassword");
 			String passwordnew = req.getParameter("newpasswordconfirm");

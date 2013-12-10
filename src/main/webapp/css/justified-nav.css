@@ -29,7 +29,7 @@ body {
   text-align: center;
   display:inline;
   color:white;
-  font-size:16px; 
+  font-size:22px; 
   font-style: Georgia ;
 
 }
@@ -50,6 +50,14 @@ body {
 .jumbotronSignup {
   margin-top: 100px;
   text-align: center;
+  background-color: transparent;
+}
+
+/* Main marketing message and sign up button */
+.jumbotronProfile {
+  margin-top: 100px;
+  text-align: left;
+  font: bold 21px Georgia;
   background-color: transparent;
 }
 

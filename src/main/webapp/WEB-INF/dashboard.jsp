@@ -21,19 +21,27 @@
   <body>
     
     <div class="container">
-      <div>
-        <div>
-          <a href="/" class="logo1"><img src="../docs-assets/logo.png"></a>
-          <a href="/" class="logo2"><img src="../docs-assets/logo.png"></a>
+      <div >
+        <div class="logo" >
+          <a href="/"><img border="0" src="../../docs-assets/logo3.png" alt="Logo" width="400" height="220" ></img></a>
         </div>
-        <div class="masthead">
-          <ul class="nav nav-justified">
-            <li><a href="/">Home</a></li>
-            <li class="active"><a href="/dashboard">Dashboard</a></li>
-            <li> <a href="/settings">Settings</a></i>
-            <li><a href="/logout">Logout</a></li>
-          </ul>
-        </div>
+          <center>
+            <div class="masthead">
+              <c:if test="${sessionScope.Username!=null}">
+                <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
+                <a href="/dashboard"><button type="Submit" class="btn btn-primary">Dashboard</button></a>
+                <a href="/profile"><button type="Submit" class="btn btn-primary">Profile</button></a>
+                <a href="/settings"><button type="Submit" class="btn btn-primary">Settings</button></a>
+                <a href="/logout"><button type="Submit" class="btn btn-primary">Logout</button></a>
+              </c:if>
+
+              <c:if test="${sessionScope.Username==null}">
+                <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
+                <a href = "/login?name=${user.username}"><button type="Submit" class="btn btn-primary">Login</button></a>
+                <a href="/signup"><button type="Submit" class="btn btn-success">Signup</button></a>
+              </c:if>
+            </div>
+          </center>
       </div>
       <!-- Jumbotron -->
       <div class="jumbotron">

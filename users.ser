@@ -1,41 +1,5 @@
 [
   {
-    "firstName": "Benke",
-    "lastName": "Benke",
-    "username": "Falk",
-    "oneLiner": "",
-    "email": "benke009@gmail.com",
-    "password": "benke123",
-    "tagList": [],
-    "followingList": [],
-    "universityList": [],
-    "workList": [],
-    "serviceList": {},
-    "defaultTheme": {
-      "uid": 6,
-      "title": "firstTheme",
-      "url": "http://www.ark.com/beta?"
-    }
-  },
-  {
-    "firstName": "Falk",
-    "lastName": "Benke",
-    "username": "fbenke",
-    "oneLiner": "",
-    "email": "falk@meltater.org",
-    "password": "password0",
-    "tagList": [],
-    "followingList": [],
-    "universityList": [],
-    "workList": [],
-    "serviceList": {},
-    "defaultTheme": {
-      "uid": 78,
-      "title": "firstTheme",
-      "url": "http://www.ark.com/beta?"
-    }
-  },
-  {
     "firstName": "Nana",
     "lastName": "Prempeh",
     "username": "nanap",
@@ -48,7 +12,43 @@
     "workList": [],
     "serviceList": {},
     "defaultTheme": {
-      "uid": 30,
+      "uid": 6,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "Kwame",
+    "lastName": "Prempeh",
+    "username": "kwamep",
+    "oneLiner": "",
+    "email": "kwameprempeh009@gmail.com",
+    "password": "kwame123",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 27,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "Kofi",
+    "lastName": "Prempeh",
+    "username": "kofip",
+    "oneLiner": "",
+    "email": "kofiprempeh009",
+    "password": "kofip1234",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 115,
       "title": "firstTheme",
       "url": "http://www.ark.com/beta?"
     }

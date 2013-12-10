@@ -52,5 +52,13 @@
   <servlet-mapping>
     <servlet-name>SettingsServlet</servlet-name>
     <url-pattern>/settings</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>controller.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/profile</url-pattern>
   </servlet-mapping>   
 </web-app>
