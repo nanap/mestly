@@ -101,5 +101,28 @@
         &copy; Company 2013
       </div>
     </div> <!-- /container -->
+    <!-- AddThis Smart Layers BEGIN -->
+    <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523b48aa5788ef47"></script>
+    <script type="text/javascript">
+    addthis.layers({
+      'theme' : 'transparent',
+      'share' : {
+        'position' : 'left',
+        'numPreferredServices' : 5
+      }, 
+      'follow' : {
+        'services' : [
+        {'service': 'facebook', 'id': 'nanaprempeh009'},
+        {'service': 'twitter', 'id': 'NanaAviation'},
+        {'service': 'linkedin', 'id': 'nanaprempeh'},
+        {'service': 'google_follow', 'id': '+NanaOWOAgyeman'}
+        ]
+      },  
+      'whatsnext' : {},  
+      'recommended' : {} 
+    });
+    </script>
+    <!-- AddThis Smart Layers END -->
   </body>
 </html>
