@@ -1,6 +1,42 @@
 /**{
   border: 2px solid black;
-}*/
+}
+
+<style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+*/
+#save{
+  
+}
+
+#tags{
+
+}
+
+#userdirectory{
+
+}
+
+#location {
+  position:relative;
+  top: 20px;
+}
+
+
+#form-map {
+    font-size: 21px;
+  padding: 14px 24px;
+}
+
+
+#map-canvas { 
+  height: 50%;
+  width: 50%;
+  background-image: url('../../docs-assets/logo1.png');
+}
 
 .aboutus {
   text-align:left;
@@ -35,14 +71,23 @@ body {
 }
 
 .list{
-  padding-top: 120px;
+  padding-top: 90px;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  margin-top: 100px;
+  text-align: center;
+  background-color: #eeeeee;
+  z-index: 1px;
+}
+
+/*User Directory*/
+.jumbotronUser {
   margin-top: 120px;
   text-align: center;
-  background-color: transparent;
+  background-color: #eeeeee;
+  z-index: 1px;
 }
 
 
@@ -179,8 +224,8 @@ body {
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
   .footer {
-    position:absolute;
-    bottom: 10px; 
+    position:relative;
+    bottom: 1px; 
     float: left;
     padding-left: 0;
     padding-right: 0;

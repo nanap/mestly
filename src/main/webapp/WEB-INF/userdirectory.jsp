@@ -2,15 +2,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <meta name="Nana Opoku" content="">
+    <link rel="shortcut icon" href="../docs-assets/favicon.png">
 
-    <title>Dashboard</title>
+    <title>User Directory</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
@@ -18,8 +18,8 @@
     <!-- Custom styles for this template -->
     <link href="../css/justified-nav.css" rel="stylesheet">
   </head>
+
   <body>
-    
     <div class="container">
       <div >
         <div class="logo" >
@@ -38,27 +38,48 @@
               </c:if>
 
               <c:if test="${sessionScope.Username==null}">
-                <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
-                <a href = "/login?name=${user.username}"><button type="Submit" class="btn btn-primary">Login</button></a>
-                <a href="/signup"><button type="Submit" class="btn btn-success">Signup</button></a>
+                <a href = "/login"><button type="Submit" class="btn btn-primary btn-lg">Login</button></a>
               </c:if>
             </div>
           </center>
       </div>
       <!-- Jumbotron -->
-      <div class="jumbotron">
-        <center>
-          Welcome!<p>
-          Your email address is ${Email}<p>
-          Your user-name is ${Username} <p> 
-        </center>   
+      <div class="jumbotronUser" >       
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                  <center><h1><strong>User Directory</strong></h1></center>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class=" panel-collapse collapse in">
+                <c:forEach var="User" items="${List}">
+                  <a href="/profile?name=${User.username}">
+                    <P><strong><c:out value=" ${User.firstName}"/><hr></strong></P>
+                  </a>
+                </c:forEach>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Site footer -->
-      <div class="footer">
-        <p>&copy; Company 2013</p>
+     
+      <!-- Foorter -->
+      <div class="footer" >
+        <div >
+          &copy; Company 2013
+        </div>
       </div>
     </div> <!-- /container -->
+     <!--Jquery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <!--Jquery ends-->
+    <!-- Bootstrap.js Layers BEGIN -->
+    <script type="text/javascript" script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap.js Layers ENDS -->
     <!-- AddThis Smart Layers BEGIN -->
     <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523b48aa5788ef47"></script>

@@ -30,6 +30,8 @@
                 <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
                 <a href="/dashboard"><button type="Submit" class="btn btn-primary">Dashboard</button></a>
                 <a href="/profile"><button type="Submit" class="btn btn-primary">Profile</button></a>
+                <a href="/edituser"><button type="Submit" class="btn btn-primary">Edit User</button></a>
+                <a href="/userdirectory"><button type="Submit" class="btn btn-primary">User Directory</button></a>
                 <a href="/settings"><button type="Submit" class="btn btn-primary">Settings</button></a>
                 <a href="/logout"><button type="Submit" class="btn btn-primary">Logout</button></a>
               </c:if>
@@ -43,7 +45,7 @@
           </center>
       </div>
       <!-- Jumbotron -->
-      <div class="jumbotronProfile" >
+      <div class="jumbotron" >
         <font color="blue">
           Welcome!<p>
           Your email address is ${user.email}<p>
@@ -69,7 +71,7 @@
     addthis.layers({
       'theme' : 'transparent',
       'share' : {
-        'position' : 'left',
+        'position' : 'right',
         'numPreferredServices' : 5
       }, 
       'follow' : {

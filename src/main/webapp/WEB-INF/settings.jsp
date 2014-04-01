@@ -20,6 +20,7 @@
 
   </head>
 
+
   <body>
     <div class="container">
       <div >
@@ -32,6 +33,8 @@
                 <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
                 <a href="/dashboard"><button type="Submit" class="btn btn-primary">Dashboard</button></a>
                 <a href="/profile"><button type="Submit" class="btn btn-primary">Profile</button></a>
+                <a href="/edituser"><button type="Submit" class="btn btn-primary">Edit User</button></a>
+                <a href="/userdirectory"><button type="Submit" class="btn btn-primary">User Directory</button></a>
                 <a href="/settings"><button type="Submit" class="btn btn-primary">Settings</button></a>
                 <a href="/logout"><button type="Submit" class="btn btn-primary">Logout</button></a>
               </c:if>
@@ -71,25 +74,57 @@
             </div>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                <button type="submit" class="btn btn-primary btn-block" data-dismiss="modal">Cancel</button>
               </div>
             </div>
           </form>
-          <form class="form-horizontal" role="form"  method="post" action="/settings?delete=true">
+          
             <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-danger btn-block">Delete Account</button>
-                </div>
+              <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Delete Account</button>
               </div>
-            </div>
-          </form>
+            </div>       
         </center>   
       </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Delet Account</h4>
+          </div>
+          <div class="modal-body">
+            We are happy you tried out MESTLY,
+            After this action we will not be 
+            able to restore your information
+            Are you sure you want to delete this 
+            account?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <form role="form"  method="post" action="/settings?delete=true">
+              <button type="submit" class="btn btn-primary">Yes, Delete My Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <!-- Site footer -->
       <div class="footer">
         <p>&copy; Company 2013</p>
       </div>
-    </div> <!-- /container -->
+    </div> 
+
+      <!--Jquery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--Jquery ends-->
+    <!-- Bootstrap.js Layers BEGIN -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap.js Layers ENDS -->
+
+    <!-- /container -->
     <!-- AddThis Smart Layers BEGIN -->
     <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523b48aa5788ef47"></script>

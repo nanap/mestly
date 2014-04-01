@@ -1,54 +1,57 @@
 [
   {
-    "firstName": "Nana",
-    "lastName": "Prempeh",
+    "firstName": "papa",
+    "lastName": "papa",
+    "username": "pii",
+    "oneLiner": "",
+    "email": "papa@gmail.com",
+    "password": "flying123",
+    "location": "null,null",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 72,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "nana",
+    "lastName": "nana",
+    "username": "kiki",
+    "oneLiner": "",
+    "email": "nana.opoku@meltwater.org",
+    "password": "flying123",
+    "location": "5.716429515465363,-0.15353500843048096",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 65,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "nana",
+    "lastName": "nana",
     "username": "nanap",
     "oneLiner": "",
     "email": "nanaprempeh009@gmail.com",
-    "password": "flying123",
+    "password": "opoku123",
+    "location": "5.711988497693297,-0.16527771949768066",
     "tagList": [],
     "followingList": [],
     "universityList": [],
     "workList": [],
     "serviceList": {},
     "defaultTheme": {
-      "uid": 6,
-      "title": "firstTheme",
-      "url": "http://www.ark.com/beta?"
-    }
-  },
-  {
-    "firstName": "Kwame",
-    "lastName": "Prempeh",
-    "username": "kwamep",
-    "oneLiner": "",
-    "email": "kwameprempeh009@gmail.com",
-    "password": "kwame123",
-    "tagList": [],
-    "followingList": [],
-    "universityList": [],
-    "workList": [],
-    "serviceList": {},
-    "defaultTheme": {
-      "uid": 27,
-      "title": "firstTheme",
-      "url": "http://www.ark.com/beta?"
-    }
-  },
-  {
-    "firstName": "Kofi",
-    "lastName": "Prempeh",
-    "username": "kofip",
-    "oneLiner": "",
-    "email": "kofiprempeh009",
-    "password": "kofip1234",
-    "tagList": [],
-    "followingList": [],
-    "universityList": [],
-    "workList": [],
-    "serviceList": {},
-    "defaultTheme": {
-      "uid": 115,
+      "uid": 25,
       "title": "firstTheme",
       "url": "http://www.ark.com/beta?"
     }

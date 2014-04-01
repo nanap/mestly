@@ -46,6 +46,22 @@
     <url-pattern>/dashboard</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>EditUserServlet</servlet-name>
+    <servlet-class>controller.EditUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditUserServlet</servlet-name>
+    <url-pattern>/edituser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserDirectoryServlet</servlet-name>
+    <servlet-class>controller.UserDirectoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserDirectoryServlet</servlet-name>
+    <url-pattern>/userdirectory</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>SettingsServlet</servlet-name>
     <servlet-class>controller.SettingsServlet</servlet-class>
   </servlet>

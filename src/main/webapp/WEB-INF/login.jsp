@@ -13,6 +13,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    
 
     <!-- Custom styles for this template -->
     <link href="../css/justified-nav.css" rel="stylesheet">
@@ -36,17 +39,17 @@
                 </c:if> -->
                 <c:if test="${sessionScope.Username==null}">
                   <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
-                  <a href="/signup"><button type="Submit" class="btn btn-primary">Signup</button></a>
+                  <a href="/signup"><button type="Submit" class="btn btn-success">Signup</button></a>
                 </c:if>
             </div>
           </center>
         </div>
 
         <!-- Jumbotron -->
-        <div class="jumbotron">       
+        <div class="jumbotronSignup">       
           
             <form class="form-horizontal" role="form"  method="post" action="/login">
-                <div class="col-md-6 col-md-offset-1">
+                <div class="col-md-4  col-md-offset-2">
                     <!-- <div class="form-group">
                       <label class="col-sm-2  control-label"></label>
                       <div class="col-sm-10 col-md-6 col-md-offset-2">
@@ -61,7 +64,7 @@
                     <div class="form-group">
                       <label class="col-sm-2  control-label"></label>
                       <div class="col-sm-10 col-md-6 col-md-offset-2">
-                        <input type="Text" name="username" class="form-control" placeholder="Enter Username">
+                        <input type="Text" name="username" class="form-control" placeholder="Enter Username" data-toggle="tooltip" data-placement="left" title="Password should be 7 more alpha numeric characters">
                       </div>
                     </div>
                     
@@ -89,8 +92,11 @@
                     </div>
                   </div>
             </form>
-            <div class="aboutus col-md-4 ">
-              Mestly is a social networking application for developers.It helps them create a beautiful online presence and find people with similar interests. It is a prettier version of Linkedin and a competitor to Zerply.</p>
+            <div class="aboutus col-md-4 col-md-offset-0">
+              Mestly is a social networking application for developers.</p>
+              It helps them create a beautiful online presence and </p>
+              find people with similar interests. It is a prettier </p>
+              version of  Linkedin and a competitor to Zerply.</p>
             </div>
              
         </div>
@@ -101,6 +107,12 @@
         &copy; Company 2013
       </div>
     </div> <!-- /container -->
+    <!--Jquery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--Jquery ends-->
+    <!-- Bootstrap.js Layers BEGIN -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap.js Layers ENDS -->
     <!-- AddThis Smart Layers BEGIN -->
     <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-523b48aa5788ef47"></script>

@@ -31,6 +31,8 @@
                 <a href="/"><button type="Submit" class="btn btn-primary">Home</button></a>
                 <a href="/dashboard"><button type="Submit" class="btn btn-primary">Dashboard</button></a>
                 <a href="/profile"><button type="Submit" class="btn btn-primary">Profile</button></a>
+                <a href="/edituser"><button type="Submit" class="btn btn-primary">Edit User</button></a>
+                <a href="/userdirectory"><button type="Submit" class="btn btn-primary">User Directory</button></a>
                 <a href="/settings"><button type="Submit" class="btn btn-primary">Settings</button></a>
                 <a href="/logout"><button type="Submit" class="btn btn-primary">Logout</button></a>
               </c:if>
@@ -58,6 +60,11 @@
           </c:forEach>
         </div>
       </div>
+
+      <div>
+        
+      </div>
+
       <!-- Foorter -->
       <div class="footer" >
         <div >

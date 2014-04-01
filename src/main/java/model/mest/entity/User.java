@@ -15,6 +15,7 @@ public class User implements Serializable{
   private String oneLiner;
   private String email;
   private String password;
+  private String location;
 
   private ArrayList<String> tagList = new ArrayList<String>();
   private HashSet<String> followingList = new HashSet<String>();
@@ -34,6 +35,7 @@ public class User implements Serializable{
       this.firstName    =   firstName;
       this.lastName     =   lastName;
       this.oneLiner     =   oneLiner;
+      this.location     =   location;
       //this.defaultTheme  =   ThemeManager.getDefaultTheme();
     }
 
@@ -44,7 +46,7 @@ public User(){
       this.firstName    =   "";
       this.lastName     =   "";
       this.oneLiner     =   "";
-
+      this.location     =   "";
 }
 
     //first name
@@ -80,6 +82,12 @@ public User(){
       return this.oneLiner;
   }
 
+
+  //location
+  public String getLocation() {
+      return this.location;
+  }
+
   //email
   public String getEmail() {
       return this.email;
@@ -95,12 +103,18 @@ public User(){
       return this.tagList;
   }
 
-  
 
   //onliner
   public void setOneLiner(String oneLiner) {
       this.oneLiner = oneLiner;
   }
+
+
+  //location
+  public void setLocation(String location) {
+     this.location = location;
+  }
+
 
   //email
   public void setEmail(String email) {
@@ -264,4 +278,6 @@ public User(){
     } 
     return false;
   }
+
+
 }
