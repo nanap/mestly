@@ -11,7 +11,7 @@
           console.log(currentLocation);
         }
         else{
-              currentLocation = "5.5543,-0.1933";
+              currentLocation = "5.558581626272206,-0.1961231231689453";
         };
 
         var temPosition = currentLocation.split(",");
