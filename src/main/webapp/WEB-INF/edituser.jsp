@@ -71,15 +71,13 @@
               <div class="form-group">
                 
                 <div class="col-sm-12">
-                  <div class="fileinput fileinput-new col-sm-7" data-provides="fileinput">
+                  <div class="fileinput fileinput-new col-sm-7" data-provides="fileinput" data-toggle="tooltip" data-placement="left" title="Click on  Choose Picture size should be 140 x 140px">
                     <div>
                       <label for="profile_picture" class="col-sm-12 tcontrol-label"><a style="color:black;font:verdana 30px;fontsize:30px;">Profile Picture</label>
                     </div>
-                    <span class="btn btn-default btn-file col-sm-12"  data-toggle="tooltip" data-placement="left" title="Click on  Choose Picture size should be 140 x 140px">
-                      <span class="fileinput-new">Select image</span>
+                    <span class="btn btn-default btn-file col-sm-12" \>
+                      <span class="fileinput-new" data-toggle="tooltip" data-placement="left" title="Click on  Choose Picture size should be 140 x 140px">Select image</span>
                       <input type="file" name="profile_picture">
-
-
                     </span>
                     <br>                                   
                     <span class="fileinput-exists btn btn-primary col-sm-12"> <br>Change<br></span>
@@ -110,7 +108,7 @@
                   Short Bio
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="button" class="btn btn-default" id="">Save Changes test</button>
+                      <button type="button" class="btn btn-default" id="save" data-loading-text="Loading..." class="btn btn-primary">Save Changes</button>
                     </div>
                   </div>  
                 </label> 
@@ -118,11 +116,6 @@
                   <textarea name="shortBio" class="form-control" maxlength="560" rows="5" placeholder="Give us a short bio"></textarea>
                   </div>
               </div>
-
-              <button type="button" id="save" data-loading-text="Loading..." class="btn btn-primary">
-                Loading state
-              </button> 
-                          
             </form>         
           </div>
           <div class="col-md-7"> 
