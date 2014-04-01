@@ -78,6 +78,8 @@
                     <span class="btn btn-default btn-file col-sm-12"  data-toggle="tooltip" data-placement="left" title="Click on  Choose Picture size should be 140 x 140px">
                       <span class="fileinput-new">Select image</span>
                       <input type="file" name="profile_picture">
+
+
                     </span>
                     <br>                                   
                     <span class="fileinput-exists btn btn-primary col-sm-12"> <br>Change<br></span>
@@ -126,18 +128,14 @@
           <div class="col-md-7"> 
             <form method="post" action="/addTag" class="form-horizontal" role="form">
               <div class="form-group" >
-                <label for="tag" class="col-sm-2 control-label" style="color:black" id="tags">Tags</label>
+                <label for="tag" class="col-sm-2 control-label" style="color:black" id="tags"  data-container="button" data-toggle="tooltip" data-placement="left" title="Add Tags to your profile, You can add Tags like (e.g., tech, web dev, front end, etc.)">
+                  Tags</label>
                   <div class="col-sm-8">
                     <input type="text" class="form-control" name="tag" placeholder="Use tags to describe who you are.">
                   </div>
                 <div class="col-sm-2">
-                    <button type="button" class="btn btn btn-success" data-container="button" data-toggle="popover" data-placement="left" data-content="You can add Tags like (e.g., tech, web dev, front end, etc.)">Add Tags</button>
+                    <button type="button" class="btn btn btn-success" data-container="button" data-toggle="tooltip" data-placement="left" title="Add Tags to your profile, You can add Tags like (e.g., tech, web dev, front end, etc.) " >Add Tags</button>
                   </div>
-
-                  <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                    Popover on top
-                  </button>
-
               </div>            
             </form>
             <hr>
