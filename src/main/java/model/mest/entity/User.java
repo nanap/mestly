@@ -15,7 +15,7 @@ public class User implements Serializable{
   private String oneLiner;
   private String email;
   private String password;
-  private String location;
+  private String location = "5.558581626272206,-0.1961231231689453";
 
   private ArrayList<String> tagList = new ArrayList<String>();
   private HashSet<String> followingList = new HashSet<String>();
@@ -46,7 +46,7 @@ public User(){
       this.firstName    =   "";
       this.lastName     =   "";
       this.oneLiner     =   "";
-      this.location     =   "";
+      this.location     =   "5.558581626272206,-0.1961231231689453";
 }
 
     //first name

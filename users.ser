@@ -55,5 +55,81 @@
       "title": "firstTheme",
       "url": "http://www.ark.com/beta?"
     }
+  },
+  {
+    "firstName": "kk",
+    "lastName": "kk",
+    "username": "kk",
+    "oneLiner": "",
+    "email": "nanaprempeh009@gmail.com",
+    "password": "kkkkk123",
+    "location": "",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 27,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "pp",
+    "lastName": "pp",
+    "username": "pp",
+    "oneLiner": "",
+    "email": "nanaprempeh009@gmail.com",
+    "password": "ppppp123",
+    "location": "5.558581626272206,-0.1961231231689453",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 34,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "oo",
+    "lastName": "oo",
+    "username": "oo",
+    "oneLiner": "",
+    "email": "nanaprempeh009@gmail.com",
+    "password": "ooooo123",
+    "location": "5.8127569137510084,-0.11995911598205566",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 77,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
+  },
+  {
+    "firstName": "mm",
+    "lastName": "mm",
+    "username": "mm",
+    "oneLiner": "",
+    "email": "nanaprempeh009@gmail.com",
+    "password": "mmmmm123",
+    "location": "null,null",
+    "tagList": [],
+    "followingList": [],
+    "universityList": [],
+    "workList": [],
+    "serviceList": {},
+    "defaultTheme": {
+      "uid": 233,
+      "title": "firstTheme",
+      "url": "http://www.ark.com/beta?"
+    }
   }
 ]
